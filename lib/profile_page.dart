@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_pt_6/profile_avatar.dart';
+import 'package:flutter_pt_6/profile_info.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -15,22 +16,10 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              radius: 50,
-              child: Icon(
-                Icons.person,
-                size: 50,
-              ),
+            ProfileAvatar(
             ),
             SizedBox(height: 16),
-            Text(
-              'Muhammad Nathan Edyansyah',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
-              textAlign: TextAlign.center,
-            ),
+            ProfileInfo(),
           ],
         ),
       ),
