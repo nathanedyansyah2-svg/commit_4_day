@@ -12,6 +12,13 @@ Project praktikum Flutter untuk membuat tampilan profil pengguna.
 - Dart
 
 ## Pengerjaan Hari 1
+## Pagi
 - Membuat halaman profil.
 - Memisahkan avatar ke `ProfileAvatar`.
 - Memisahkan informasi profil ke `ProfileInfo`.
+
+## Refactoring Hari 1
+## Siang
+-Membuat widget ProfileAvatar.
+-Membuat widget ProfileInfo.
+-komponen profil agar kode lebih rapi dan terstruktur.
