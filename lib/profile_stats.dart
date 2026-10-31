@@ -5,26 +5,57 @@ class ProfileStats extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      decoration: BoxDecoration(
+        color: Colors.blue[50],
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: const Row(
+        
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          
+          StatItem(count: '15', label: 'Proyek'),
+          SizedBox(width: 30),
+          StatItem(count: '1.2K', label: 'Followers'),
+          SizedBox(width: 30),
+          StatItem(count: '42', label: 'Following'),
+        ],
+      ),
+    );
+  }
+}
+
+class StatItem extends StatelessWidget {
+  final String count;
+  final String label;
+
+  const StatItem({
+    super.key,
+    required this.count,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
       children: [
-        Column(
-          children: [
-            Text('15'),
-            Text('Proyek'),
-          ],
+        Text(
+          count,
+          style: const TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.blueAccent,
+          ),
         ),
-        Column(
-          children: [
-            Text('1.3k'),
-            Text('Followers'),
-          ],
-        ),
-        Column(
-          children: [
-            Text('40'),
-            Text('Following'),
-          ],
+        const SizedBox(height: 4),
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 14,
+            color: Colors.grey[600],
+          ),
         ),
       ],
     );
