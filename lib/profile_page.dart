@@ -15,16 +15,23 @@ class ProfilePage extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.white,
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ProfileAvatar(
+            const ProfileAvatar(),
+            const SizedBox(height: 16),
+            const ProfileInfo(),
+            const SizedBox(height: 24),
+
+            ElevatedButton.icon(
+              onPressed: null,
+              icon: const Icon(Icons.edit),
+              label: const Text('Edit Profil'),
             ),
-            SizedBox(height: 16),
-            ProfileInfo(),
-            SizedBox(height: 24),
-            ProfileStats(),
+
+            const SizedBox(height: 24),
+            const ProfileStats(),
           ],
         ),
       ),
