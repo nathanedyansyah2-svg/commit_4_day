@@ -5,7 +5,7 @@ class ProfileInfo extends StatelessWidget {
   const ProfileInfo({super.key});
 
   final String userName = 'Muhammad Nathan Edyansyah';
-  final String role = 'Software Engineering Student';
+  final String role = 'Mahasiswa Teknik Informatika';
 
   @override
   Widget build(BuildContext context) {
