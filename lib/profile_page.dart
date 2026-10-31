@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pt_6/profile_avatar.dart';
 import 'package:flutter_pt_6/profile_info.dart';
+import 'package:flutter_pt_6/profile_stats.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -20,6 +21,8 @@ class ProfilePage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             ProfileInfo(),
+            SizedBox(height: 24),
+            ProfileStats(),
           ],
         ),
       ),
