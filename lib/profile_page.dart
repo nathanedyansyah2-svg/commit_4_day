@@ -12,6 +12,8 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Profil Pengguna'),
         centerTitle: true,
+        backgroundColor: Colors.blueAccent,
+        foregroundColor: Colors.white,
       ),
       body: const Center(
         child: Column(
