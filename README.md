@@ -22,6 +22,8 @@ Project praktikum Flutter untuk membuat tampilan profil pengguna.
 - Membuat widget `ProfileAvatar`.
 - Membuat widget `ProfileInfo`.
 - Merapikan komponen profil agar kode lebih rapi dan terstruktur.
+- ada penambahan text mahasiswa teknik informatika
+- menambahkan icon edit profil juga 
 
 ## Pengerjaan Hari 2
 ### Pagi
