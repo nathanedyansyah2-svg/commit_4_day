@@ -1,13 +1,12 @@
 # Aplikasi Profil Flutter
 
-Project praktikum Flutter untuk membuat tampilan profil pengguna.
-
 ## Fitur
 - Menampilkan avatar dan nama pengguna.
 - Menampilkan informasi pekerjaan.
 - Menggunakan Custom Widget.
 - Menampilkan profil.
 - Menampilkan Edit Profil.
+- Menampilkan daftar pengalaman kerja yang bisa di-scroll.
 
 ## Teknologi
 - Flutter
@@ -25,7 +24,7 @@ Project praktikum Flutter untuk membuat tampilan profil pengguna.
 ### Siang
 - Membuat widget ProfileAvatar.
 - Membuat widget ProfileInfo.
-- Merapikan komponen profil agar kode lebih rapih.
+- Merapikan komponen profil agar kode lebih rapi.
 - Menambahkan teks mahasiswa Teknik Informatika.
 
 ## Pengerjaan Hari 2
@@ -33,9 +32,19 @@ Project praktikum Flutter untuk membuat tampilan profil pengguna.
 ### Pagi
 - Menambahkan baris statistik menggunakan widget Row.
 - Menampilkan statistik Proyek, Followers, dan Following.
-- Menggunakan widget Colum untuk angka dan label statistik.
+- Menggunakan widget Column untuk angka dan label statistik.
 
 ### Siang
 - Memisahkan tampilan statistik ke widget ProfileStats.
 - Membuat widget StatItem agar angka dan label statistik bisa digunakan kembali.
-- Merapikan struktur kode
+- Merapikan struktur kode.
+
+## Pengerjaan Hari 3
+
+### Pagi
+- Menambahkan daftar pengalaman kerja menggunakan ListView.builder.
+- Membuat list array dummy data pengalaman Backend Engineering.
+- Menggunakan widget Expanded untuk membungkus ListView.builder.
+- Menambahkan Card dan ListTile untuk menampilkan setiap pengalaman kerja pengalamanya cuma dua yang fakta.
+- Membuat daftar pengalaman kerja agar bisa discroll tipis tipis.
+- Mengatur tampilan agar tidak mengalami error.
