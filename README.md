@@ -46,3 +46,8 @@
 - Membuat list array dummy data pengalaman Backend Engineering.
 - Menggunakan widget Expanded untuk membungkus ListView.builder.
 - Menambahkan Card dan ListTile untuk menampilkan setiap pengalaman kerja pengalamanya cuma dua yang fakta.
+
+### Malam
+- Memisahkan tampilan pengalaman kerja ke widget ExperienceCard.
+- Menambahkan ikon dan efek pada kartu.
+- Merapikan struktur kode sesuai intruksi.
