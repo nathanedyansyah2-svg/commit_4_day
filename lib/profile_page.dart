@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_pt_6/profile_avatar.dart';
 import 'package:flutter_pt_6/profile_info.dart';
@@ -5,6 +6,13 @@ import 'package:flutter_pt_6/profile_stats.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
+
+  final List<String> experiences = const [
+    'Driver ShopeFood - 17 Kecamatan',
+    'PKL - 1 bulan di pecat',
+    'Lead Developer - Aplikasi Sekurindo',
+    'Backend Engineer - Pengembangan Sistem E-money',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +23,9 @@ class ProfilePage extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.white,
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const ProfileAvatar(),
             const SizedBox(height: 16),
@@ -25,13 +33,46 @@ class ProfilePage extends StatelessWidget {
             const SizedBox(height: 24),
 
             ElevatedButton.icon(
-              onPressed: null,
+              onPressed: () {},
               icon: const Icon(Icons.edit),
               label: const Text('Edit Profil'),
             ),
 
             const SizedBox(height: 24),
             const ProfileStats(),
+            const SizedBox(height: 24),
+
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Pengalaman Kerja',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+
+            const Divider(),
+
+            Expanded(
+              child: ListView.builder(
+                itemCount: experiences.length,
+                itemBuilder: (context, index) {
+                  return Card(
+                    elevation: 2,
+                    margin: const EdgeInsets.symmetric(vertical: 6),
+                    child: ListTile(
+                      leading: const Icon(
+                        Icons.work,
+                        color: Colors.blueAccent,
+                      ),
+                      title: Text(experiences[index]),
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
