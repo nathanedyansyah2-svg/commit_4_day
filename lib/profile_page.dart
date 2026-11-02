@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_pt_6/profile_avatar.dart';
 import 'package:flutter_pt_6/profile_info.dart';
@@ -8,7 +9,7 @@ class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
   @override
-   State<ProfilePage> createState() => _ProfilePageState();
+  State<ProfilePage> createState() => _ProfilePageState();
 }
 
 class _ProfilePageState extends State<ProfilePage> {
@@ -40,7 +41,35 @@ class _ProfilePageState extends State<ProfilePage> {
             const SizedBox(height: 24),
 
             ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                String newName = userName;
+
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: const Text('Edit Profil'),
+                      content: TextFormField(
+                        initialValue: userName,
+                        onChanged: (value) {
+                          newName = value;
+                        },
+                      ),
+                      actions: [
+                        ElevatedButton(
+                          onPressed: () {
+                            setState(() {
+                              userName = newName;
+                            });
+                            Navigator.pop(context);
+                          },
+                          child: const Text('Simpan'),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
               icon: const Icon(Icons.edit),
               label: const Text('Edit Profil'),
             ),
