@@ -59,3 +59,7 @@
 - Memindahkan variabel userName ke dalam State class.
 - Menghubungkan data nama pengguna ke ProfileInfo.
 
+### Malam
+- Menambahkan showDialog untuk menampilkan form edit profil.
+- Menggunakan TextFormField untuk mengubah nama.
+- Menggunakan setState() untuk memperbarui nama.
