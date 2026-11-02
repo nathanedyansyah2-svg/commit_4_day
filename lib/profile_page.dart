@@ -4,8 +4,15 @@ import 'package:flutter_pt_6/profile_info.dart';
 import 'package:flutter_pt_6/profile_stats.dart';
 import 'package:flutter_pt_6/experience_card.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
+
+  @override
+   State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  String userName = 'Muhammad Nathan Edyansyah';
 
   final List<String> experiences = const [
     'Driver ShopeFood - 17 Kecamatan',
@@ -29,7 +36,7 @@ class ProfilePage extends StatelessWidget {
           children: [
             const ProfileAvatar(),
             const SizedBox(height: 16),
-            const ProfileInfo(),
+            ProfileInfo(userName: userName),
             const SizedBox(height: 24),
 
             ElevatedButton.icon(

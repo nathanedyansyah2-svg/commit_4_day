@@ -2,10 +2,12 @@
 import 'package:flutter/material.dart';
 
 class ProfileInfo extends StatelessWidget {
-  const ProfileInfo({super.key});
-
-  final String userName = 'Muhammad Nathan Edyansyah';
+  final String userName;
   final String role = 'Mahasiswa Teknik Informatika';
+  const ProfileInfo({
+    super.key,
+    required this.userName,
+  });
 
   @override
   Widget build(BuildContext context) {
