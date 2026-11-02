@@ -51,3 +51,11 @@
 - Memisahkan tampilan pengalaman kerja ke widget ExperienceCard.
 - Menambahkan ikon dan efek pada kartu.
 - Merapikan struktur kode sesuai intruksi.
+
+## Pengerjaan Hari 4
+
+### Pagi
+- Mengubah ProfilePage dari StatelessWidget menjadi StatefulWidget.
+- Memindahkan variabel userName ke dalam State class.
+- Menghubungkan data nama pengguna ke ProfileInfo.
+
